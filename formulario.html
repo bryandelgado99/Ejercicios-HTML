@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <form>
+        <h3>Rellena tu CV</h3>
+        <fieldset>
+            <legend>Datos personales</legend>
+            <label>Nombre</label>
+            <br>
+            <input name="nombre" type="text">
+            <br>
+            <label>Apellidos</label>
+            <br>
+            <input apellido="apellido" type="text">
+            <br>
+            <label>Contraseña</label>
+            <br>
+            <input password="password" type="password">
+            <br>
+            <label>DNI</label>
+            <br>
+            <input dni="dni" type="text">
+            <br>
+            <label>Sexo</label>
+            <br>
+            <input type="radio" id="hombre" name="sexo" value="mujer">  
+                <label for="hombre">Hombre</label><br>
+            <input type="radio" id="mujer" name="sexo" value="mujer">  
+                <label for="mujer">Mujer</label><br>
+            <br>
+            <label>Incluir mi foto</label>
+            <input type="file"><br>
+
+            <br>
+            <label>Provincia</label>
+            <br>
+            <select name="Provincia" >
+                <option value="selecciona"> - selecciona - </option>
+                <option value="pichincha">Pichincha</option>
+                <option value="guayas">Guayas</option>
+                <option value="imbabura">Imbabura</option>
+            </select><br>
+            <br>
+            <label>Fecha de nacimiento</label>
+            <br>
+            <input dia="dia" type="text" size="2"> de
+            <select name="mes">
+                <option value="mes1">Enero</option>
+                <option value="mes2">Febrero</option>
+                <option value="mes3">Marzo</option>
+                <option value="mes4">Abril</option>
+                <option value="mes5">Mayo</option>
+                <option value="mes6">Junio</option>
+                <option value="mes7">Julio</option>
+            </select> de 
+            <input dia="dia" type="text" size="4">
+            <br><br>
+            <label>Temas de interés</label><br>
+            <textarea rows="5" cols="25">
+
+            </textarea>
+        </fieldset>
+        <fieldset>
+            <legend>Datos económicos</legend>
+
+            <label>Precio</label>
+            <input precio="precio" type="text" size="5"> € &nbsp;&nbsp;&nbsp;&nbsp;
+            <label>Impuestos</label>
+            <select name="impuestos">
+                <option value="value1">4% </option>
+                <option value="value2">8% </option>
+                <option value="value3">12% </option>
+            </select>
+            <br><br>
+
+            <label>Promoción</label>
+            <br>
+            <input type="radio" id="ninguno" name="promocion" value="ninguno">  
+                <label for="ninguno">Ninguno</label><br>
+            <input type="radio" id="transportG" name="promocion" value="transportG">  
+                <label for="transportG">Transporte gratuito</label><br>
+            <input type="radio" id="descuento" name="promocion" value="descuento">  
+                <label for="descuento">Descuento</label><br>
+            <br>
+        </fieldset>
+        <br>
+        <input suscripcion="suscripcion" type="checkbox"> Suscribirme al boletín de novedades <br>
+        <br>
+        <input guardar="guardar" type="button" value="Guardar cambios">
+        <input borra="borrar" type="button" value="Borrar los datos introducidos">
+
+    </form>
+</body>
+</html>
